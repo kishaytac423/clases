@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: cambria;
+	box-sizing: border-box;
+}
+section{position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	border: 2px solid #000;
+}
+section .slide{
+	position: relative;
+	height: 100%;
+	flex: 1;
+	border-right: 2px solid #000;
+	overflow: hidden;
+	transition: 0.5s ease-in-out;
+}
+section .slide: last- child{
+	border-right: none;
+}
+section .slide hover{
+	flex-grow: 5;
+}
+section .slide nth-child(primero) {
+	background: url(/img/volmexico.jpeg);
+	background-position: center center;
+}
+section .slide nth-child(segundo) {
+	background: url(/img/vpopoca.jpg);
+	background-position: center center;
+}
+section .slide nth-child(tercero) {
+	background: url(/img/nevadoT.jpg);
+	background-position: center center;
+}
+section .slide nth-child(cuarto) {
+	background: url(/img/vpari.jpg);
+	background-position: center center;
+}
+section .slide nth-child(quinto) {
+	background: url(/img/VTresVir.jpg);
+	background-position: center center;
+}
+section .slide nth-child(sexto) {
+	background: url(/img/Veverman.jpg);
+	background-position: center center;
+}
+section .slide nth-child(septimo) {
+	background: url(/img/Tacaná.jpeg);
+	background-position: center center;
+}
+section .slide .content{
+	position: absolute;
+	bottom: 0;
+	margin:40px;
+	padding: 30px;
+	background:#000;
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(100px);
+}
+section .slide:hover .content{
+	visibility: visible;
+	opacity: 1;
+	transition: 10s;
+	transform: translateY(0);
+	background: black;
+}
+

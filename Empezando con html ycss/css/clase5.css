@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+div{
+	width: 100px;
+	height: 100px;
+	background: orange;
+	color: green;
+	font size: px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.caja{
+position: fixed;
+left:200px;
+bottom: 0px;
+right: 0px;
+top: 100px;
+}
+.caja_padre{
+width: 500px;
+height: 500px;
+background: red;
+position: absolute;
+}

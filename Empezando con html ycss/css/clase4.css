@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	background: #e6e6e6;
+
+}
+header, .principal,footer{
+	width: 90%;
+	margin: 20px auto;
+	max-width: 1000px;
+}
+header, nav{
+	background: #528fd5;
+	overflow: hidden;
+}
+header
+nav ul{
+	list-style: none;
+}
+header nav ul li{
+	float: left;
+}
+header nav ul li a{
+	display: block;
+	padding: 10px 20px;	
+	color: white;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	background: purple;
+	cursor:alias;
+}
+.principal .articulos{
+	width: 68.5%;
+	float: left;
+	margin-left: 1.5%;
+} 
+aside{
+	width: 30%;
+	background: orange;
+	padding:20px;
+	box-sizing: border-box;
+	float: left;
+}
+.principal .articulos article{
+padding: 20px;
+margin-bottom: 20px;
+background:purple;
+
+
+
+
+footer{
+	font-size: 30px;
+	text-align: center;
+	background: orange;
+	clear:both;
+	font-family: 'Indie Flower', cursive;
+
+}
+div{
+	width: 20%;
+	margin:30%;
+	padding: 10px;
+
+
+
+}
+/*footer*/ .icon-adguard{
+	text-align: center;
+}

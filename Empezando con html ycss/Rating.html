@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rating</title>
+	<meta charset="utf-8">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			background:#262626;
+		}
+		.rating{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: flex;
+			transform: translate(-50%,-50%);
+		}
+		.rating input{
+			display: none;
+		}
+		.rating label:before{
+			position: relative;
+			display: block;
+			color: #101010;
+			content:'\f005';
+			font-family: fontAwesome;
+			position: relative;
+			display: block;
+			font-size: 50px;
+			color: #101010;
+		}
+				.rating label:after{
+			/*position: relative;
+			display: block;*/
+			color: #101010;
+			content:'\f005';
+			font-family: fontAwesome;
+			position: absolute;
+			display: block;
+			font-size: 50px;
+			color: #1f9cff;
+			top: 0;
+			opacity: 0;
+			transition: 0.5s;
+			text-shadow: 0 2px 5px rgb(0,0,0,0.5);
+
+		}
+		.rating label:hover:after,
+		.rating input:hover~label:after,
+		.rating input:checked~label:after{
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="rating">
+		<input type="text" name="star" id="estrella1"><label for="estrella1"></label>
+		<input type="text" name="star" id="estrella2"><label for="estrella2"></label>
+		<input type="text" name="star" id="estrella3"><label for="estrella3"></label>
+		<input type="text" name="star" id="estrella4"><label for="estrella4"></label>
+		<input type="text" name="star" id="estrella5"><label for="estrella5"></label>
+	</div>
+
+</body>
+</html>

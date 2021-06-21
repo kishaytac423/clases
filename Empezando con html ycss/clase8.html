@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>practica 8</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+
+		*{
+			margin: 0;
+			padding: 0;
+			/*box-sizing: border-box;*/
+		}
+		.banner{ /* este es el espacio donde se pondra la imagen */
+			position: relative;
+			width: 100%;
+			height: 100vh;
+			background: url(#);
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		section:nth-child(2n+1) { /* relative para que permita moverse el contenido, display:flex para que la imagen se acomode a lado*/
+			position: relative;
+			height: auto;
+			background: #fafafa;
+			display: flex;
+			flex-direction: row-reverse;/*junto con nth*/
+		}
+		section:nth-child(2n+2) { 
+			position: relative;
+			height: auto;
+			background: #fafafa;
+			display: flex;
+			
+		}
+		section .img {
+			position: sticky;
+			top: 0px;
+			min-width: 60%;
+			height: 100vh;
+		}
+		section .img img{
+			position: absolute;
+			top: 50%;
+			left: 10%;
+			transform: translate(-50% -50%);
+			max-width: 6
+			100px;
+		}
+		section .content {
+			padding: 100px 0 100px 100px;
+			text-align: right;
+		}
+		section:nth-child(2n+1) .content {
+		padding: 100px 0 100px 100px;
+		text-align: right;	
+		}
+		section:nth-child(2n+2) .content: {
+		padding: 100px 100px 100px 0;
+		text-align: left;
+		}
+		section .content h2 {
+		margin: 0 0 20px;
+		font-size: 200px;	
+		}
+		section .content p{
+		color:silver;
+		font-size: 35px;	
+		}
+	</style>
+</head>
+<body>
+<head>
+	
+</head>
+<div class="baner"></div>
+	<section>
+		<div class="img">
+			<img src="img/garden.jpg">
+		</div>
+		<div class="content">
+			<h2>Titulo1</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+	<section>
+		<div class="img">
+			<img src="img/froja.jpg">
+		</div>
+		<div class="content">
+			<h2>Titulo2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+	<section>
+		<div class="img">
+			<img src="img/mariposas.jpg">
+		</div>
+		<div class="content">
+			<h2>Titulo3</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+</body>
+</html>

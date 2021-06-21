@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>caruzel de imagenes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.slide{
+			width: 35%;
+			margin: auto;
+			overflow:hidden;
+		}
+		.slide ul{
+			padding: 0;
+			width: 400%;
+			display: flex;
+			background: green;
+			animation: imagen 18s infinite;
+			animation-direction: alternate;
+		}
+		.slide ul li{
+			list-style: none;
+
+		}
+		.slide ul li img{
+			width: 100%;
+
+		}
+		@keyframes imagen{
+			0%{margin-left: 0;}
+			20%{margin-left: 0;}
+
+			25%{margin-left: -100%}
+			45%{margin-left: -100%}
+
+			50%{margin-left: -200%}
+			70%{margin-left: -200%}
+
+			75%{margin-left: -300%}
+			100%{margin-left: -300%}
+		}
+	</style>
+</head>
+<body>
+<div class="slide">
+	<ul>
+		<li><img src="lizett c/img/a1.jpg"></li>
+		<li><img src="lizett c/img/a2.jpg"></li>
+		<li><img src="lizett c/img/a3.jpg"></li>
+		<li><img src="lizett c/img/a4.jpg"></li>
+	</ul>
+</div>
+</body>
+</html>
